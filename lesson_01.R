@@ -1,2 +1,2 @@
 library(shiny)
-runApp("census-app") #, display.mode = "showcase")
+runApp("census-app", display.mode = "showcase")
