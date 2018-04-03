@@ -1,3 +1,5 @@
+# Lesson 1
+
 library(shiny)
 
 # Define UI for app that draws a histogram ----
@@ -55,7 +57,7 @@ server <- function(input, output) {
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
     
     # color code can be in hex
-    hist(x, breaks = bins, col = "red", border = "white",
+    hist(x, breaks = bins, col = "red", border = "black",
          
          # title on X, Y is frequency
          xlab = "Waiting time to next eruption (in mins)",
@@ -67,4 +69,5 @@ server <- function(input, output) {
   
 }
 
+# Run the App
 shinyApp(ui = ui, server = server)
