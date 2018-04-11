@@ -1,0 +1,13 @@
+name: census-app
+title: census-app
+username:
+account: mahokkit
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 314772
+bundleId: 1314419
+url: https://mahokkit.shinyapps.io/census-app/
+when: 1523481506.63492
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: test.R
