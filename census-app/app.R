@@ -26,19 +26,17 @@ ui <- fluidPage( title = "2010 US Census Visualization",
       ),
     
     mainPanel(
-      p("Shiny is an R package that makes it",em("incredibly easy ")," to build interactive web applications straight from R"),
-      p("It is an interactive approach to tell your data story, and allow end users to interact with your data and analysis."),
-      
-      h2("Features"),
-      p("- Combines the computational power of R"),
-      p("- Built in Responsive Design try it on your mobile device or tablet!"),
-      p("- Host your Shiny app on the web by using your own servers or RStudio's hosting service like this", 
-        strong("one")," with ShinyApps.io"),
-      p("- Shiny applications are automatically 'live' in the same way that ", 
-        strong("spreadsheets"),
-        " are live. Outputs change instantly as users modify inputs, without requiring a reload of the browser.  Try it out!"),
-      img(src = "rstudio.png", height = 80, width = 250, align = "center"),
+      p("Shiny is a package within R that allow for R Programmers to build interactive web application straight from R. It is one of the many ways to design
+        interactive dashboard that allow you to tell your data story or allowing end users to interact with your data and analysis."),
+      p("One of the many cool features with Shiny is that it has built-in responsive design.  So whether the users are on mobile or desktop, 
+        it will automatically adjust."),
+      p("Just like many visualization tools out there, the output will instantly change as the user modify the inputs."),
+      p("Although it has a deep learning curve, Shiny allow R Programmers to use computational power of R while making stunningly beautiful visualization. "),
+      p("Check out the", a("Shiny Gallery", href="https://shiny.rstudio.com/gallery/")," to see what others  users (with FAR more experiences and knowledge of R) had created!"),
+      p("To see the code behind this, please click", a("here", href="https://github.com/Mahokkit/RProject/tree/master/census-app")),
+      br(),br(),img(src = "rstudio.png", height = 80, width = 250, align = "center"),
       br(),
+
       "Shiny is a product of ",span("RStudio",style = "color:blue"),
       p("To learn more visit the ",
         a("Shiny homepage.", 
@@ -72,4 +70,4 @@ server <- function(input, output) {
 }
 
 # Run the app ----
-shinyApp(ui = ui, server = server)
+shinyApp(ui = ui, server = server, options = list(display.mode = 'showcase'))

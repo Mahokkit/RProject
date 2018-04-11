@@ -5,9 +5,9 @@ account: mahokkit
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 314772
-bundleId: 1314419
+bundleId: 1314473
 url: https://mahokkit.shinyapps.io/census-app/
-when: 1523481506.63492
+when: 1523484101.24843
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: test.R
